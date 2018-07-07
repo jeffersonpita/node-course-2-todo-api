@@ -27,15 +27,18 @@ const users = [{
 
 const todos = [{
   _id: new ObjectID(),
-  text: "First object"
+  text: "First object",
+  _creator: userOneId
 }, {
   _id: new ObjectID(),
   text: "Second object",
   completed: true,
-  completedAt: 123
+  completedAt: 123,
+  _creator: userTwoId
 }, {
   _id: new ObjectID(),
-  text: "Third object"
+  text: "Third object",
+  _creator: userOneId
 }];
 
 const populateTodos = (done)=>{
